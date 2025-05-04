@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: clone the repository
+      - name: clone the repository from gagan
         uses: actions/checkout@v4.1.5
       - name: list files
         run: ls -l
