@@ -32,9 +32,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         run: |
-          docker build -t gagandeepgawri/cts:latest .
-          docker push gagandeepgawri/cts:latest
+          docker build -t raghu214/cts:latest .
+          docker push raghu214/cts:latest
       - name: Docker container creation test
         run: |
-          docker run -dt --name c1 gagandeepgawri/cts:latest
+          docker run -dt --name c1 raghu214/cts:latest
           docker ps
